@@ -5,7 +5,7 @@ interface RepositoriesState {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const reducer = (state: RepositoriesState, action: any) => {
+const reducer = (state: RepositoriesState, action: any): RepositoriesState => {
   switch (action.type) {
     case 'search_repositories':
       return {
